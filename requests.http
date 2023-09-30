@@ -1,0 +1,33 @@
+POST http://localhost:3000/login
+Content-Type: application/json;
+
+{
+    "username": "Ryan-Test",
+    "password": "passw"
+}
+
+###
+GET http://localhost:3000/users?id=vh3ukxlrcqf
+Authorization: 4v6buxykqq
+
+###
+DELETE http://localhost:3000/users?id=s2xlth7ve9
+Authorization: pncrysfkhus
+
+
+###
+GET http://localhost:3000/users?name=TestUser
+Authorization: pncrysfkhus
+
+
+###
+PUT http://localhost:3000/users
+Authorization: pncrysfkhus
+Content-Type: application/json;
+
+{
+    "name": "TestUser",
+    "age": 7,
+    "email": "test@test.com",
+    "working_position":4
+}
